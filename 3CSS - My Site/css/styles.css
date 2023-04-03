@@ -1,0 +1,45 @@
+body{
+    margin: 0px;
+}
+ div.top{
+    background-color: #e4f9f5;
+    width: 200px; 
+    height: 200px;
+    border: solid;
+    border-width: 10px;
+    padding: 20px;
+}
+
+ 
+
+
+h1{
+    margin-top: 0;
+}
+
+/* תרגיל */
+/* div.top{
+    background-color: #e4f9f5;
+    width: 200px; 
+    height: 200px;
+    border: solid;
+    border-width: 10px;
+    padding: 20px;
+}
+
+div.mid{
+    background-color: red;
+    border:solid;
+    border-width: 20px;
+    width: 200px; 
+    height: 200px;
+    margin-left: 260px;
+}
+div.buttom{
+    background-color: yellow;
+    width: 200px; 
+    height: 200px; 
+    border:solid;
+    border-width: 10px;
+    margin-left: 500px;
+} */

@@ -30,3 +30,20 @@ body {
   h1,h3{
     color: #66BFBF;
   }
+
+  
+  button.NewSite {
+    width: 7em;
+    height: 5ex;
+    background-color: gold;
+    border: 2px solid firebrick;
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    font-size: 40px;
+  }
+  
+  button.NewSite:hover {
+    background-color: hotpink;
+  }
