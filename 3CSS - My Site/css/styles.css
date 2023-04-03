@@ -43,9 +43,30 @@ div.buttom{
     margin-left: 500px;
 } */
 
-
- p{
+/* בלוק-אינליין=גם אותה שורה וגם אפשר לשנות גודל */
+p.InlineBlock{
     background-color: red;
-    width: 100px;
+    width: 100px; 
+    display: inline-block;
+}
+/* אינליין= אותה שורה אבל אי אפשר לשנות גודל */
+p.testp{
+    background-color: red;
+    width: 100px; 
     display: inline;
+}
+/* מעלים אותו (מחביא) כאילו לא היה כלומר לא יהיו רווחים בין האלמנטים=NONE*/
+p.none{ 
+    display: none;
+}
+/* מעלים אותו (מחביא) אבל רק ויזואלית כלומר יהיו רווחים בין האלמנטים=NONE*/
+p.visibility_hidden{ 
+    visibility: hidden;
+}
+
+/* בלוק= אפשר לשנות גודל אבל אי אפשר אותה שורה  */
+span.tests{
+    background-color: blueviolet;
+    width: 100px;
+    display: block;
  }
