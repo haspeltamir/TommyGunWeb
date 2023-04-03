@@ -3,11 +3,10 @@ body{
 }
  div.top{
     background-color: #e4f9f5;
-    width: 200px; 
-    height: 200px;
-    border: solid;
-    border-width: 10px;
-    padding: 20px;
+}
+
+.pro{
+    text-decoration:underline;
 }
 
  
@@ -43,3 +42,10 @@ div.buttom{
     border-width: 10px;
     margin-left: 500px;
 } */
+
+
+ p{
+    background-color: red;
+    width: 100px;
+    display: inline;
+ }
