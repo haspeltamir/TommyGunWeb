@@ -1,0 +1,59 @@
+/***********************tag selectors***********************/
+h1{
+  color: red;
+  font-size: 100px;
+}
+
+
+/***********************class selectors***********************/
+/* מקבץ כמה דברים שרוצים שיהיה להם מכנים משותפים  */
+
+img.bacon {
+  /*יוצר חוקים לתמונה*/
+  width: 200px; /*pic size*/
+  background-color: green;
+  border-radius: 50px; /*מעגל קצוות*/
+  margin-right: 10px;
+}
+
+img.broccoli {
+  /*יוצר חוקים לתמונה*/
+  background-color: red;
+  margin-right: 10px;
+}
+img.broccoli:hover {
+  /*יוצר חוקים לתמונה*/
+  background-color: gold;
+}
+
+img.circular{
+  border-radius: 50px; /*מעגל קצוות*/
+}
+img.size{
+  width: 200px; /*pic size*/
+}
+
+/***********************id selectors***********************/
+/* יש רק אחד */
+
+#heading{
+  /* מקבל עדיפות על ההגדרה הכללית כי זה יותר ספציפי */
+  color: blue;
+}
+/***********************button and psudo selectors***********************/
+
+
+button.joinBtn {
+  width: 10em;
+  height: 5ex;
+  background-color: gold;
+  border: 2px solid firebrick;
+  border-radius: 10px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+
+button.joinBtn:hover {
+  background-color: hotpink;
+}

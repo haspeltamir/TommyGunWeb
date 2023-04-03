@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="../index.html" style="font-size: 20px">back to index</a><br />
+    <!-- text and submit button input -->
+
+    <input type="text" />
+    <input type="submit" /><br /><br />
+
+    <!-- file input -->
+    <label for="avatar">Choose a profile picture:</label>
+    <input
+      type="file"
+      id="avatar"
+      name="avatar"
+      accept="image/png, image/jpeg"
+    />
+    <br />
+    <br />
+    <!-- date input -->
+    <label for="start">Start date:</label>
+    <input
+      type="date"
+      id="start"
+      name="trip-start"
+      value="2018-07-22"
+      min="2018-01-01"
+      max="2018-12-31"
+    />
+    <br />
+    <br />
+    <!-- radio input -->
+    <fieldset>
+      <legend>Select a maintenance drone:</legend>
+      <div>
+        <input type="radio" id="huey" name="drone" value="huey" checked />
+        <label for="huey">Huey</label>
+      </div>
+      <div>
+        <input type="radio" id="dewey" name="drone" value="dewey" />
+        <label for="dewey">Dewey</label>
+      </div>
+
+      <div>
+        <input type="radio" id="louie" name="drone" value="louie" />
+        <label for="louie">Louie</label>
+      </div>
+    </fieldset>
+
+    <!-- range input -->
+    <label for="volume">Volume</label>
+    <input type="range" name="volume" value="0" min="0" max="11" />
+  </body>
+</html>

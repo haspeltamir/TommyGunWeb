@@ -1,0 +1,32 @@
+body {
+    background-color: #eaf6f6;
+  }
+
+  hr {
+    /*one you change default setting you must chang all the others
+    because they become "zero" automatically*/
+    /*background-color: rgb(185, 37, 37);
+    border-style: none;
+    height: 4px;
+    width: 60%; /*%==responsive*/
+
+    /*3
+    ערכים זה טופ ואז שמאל ימין יחד ואז גבול תחתון*/
+    /*border-style: dotted none none;*/
+    border-style: none;
+    border-top-style: dotted;
+    border-color: gray;
+    border-width: 5px;
+    width: 5%; /*%==responsive*/
+  }
+
+  img {
+    /*יוצר חוקים לתמונה*/
+    width: 100px; /*pic size*/
+    border-radius: 50px; /*מעגל קצוות*/
+    margin-right: 10px;
+  }
+
+  h1,h3{
+    color: #66BFBF;
+  }
