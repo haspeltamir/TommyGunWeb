@@ -34,7 +34,7 @@ body {
   
   button.NewSite {
     width: 7em;
-    height: 10ex;
+    height: 5ex;
     background-color: gold;
     border: 2px solid firebrick;
     border-radius: 10px;
@@ -46,4 +46,8 @@ body {
   
   button.NewSite:hover {
     background-color: hotpink;
+  }
+
+  .pro{
+      text-decoration:underline;
   }
