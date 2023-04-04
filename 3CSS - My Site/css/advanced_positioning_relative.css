@@ -1,0 +1,62 @@
+/***********************Static positioning***********************/
+/* its just html without css (default)*/
+div.static{
+    background-color: aqua;
+    width: 100px; 
+    height: 100px;
+    display: none;
+}
+/***********************Relative positioning***********************/
+/* יחסי לאיך שזה היה ממוקם לו זה היה סטטי */
+/* זה עולה על אלמנטים אחרים בניגוד למארג'יין */
+/* נותן לו 20 פיקסלים רווח בין איפה שהקצה השמאלי היה לולא היה סטטי לדוגמא */
+/* אם מזיזים אותו הוא משאיר את המיקום מאחוריו ריק כמו רוח רפאים */
+div.relative{
+    width: 100px; 
+    height: 100px;
+    position: relative;
+    display: inline-block;
+
+}
+
+div.Rred{
+    background-color: red;
+    left: 200px;
+}
+div.Rblue{
+    background-color: blue;
+    right: 100px;
+}
+div.Ryellow{
+background-color: yellow;
+right: 100px;
+/* bottom: 200px; */
+/* left: 100px; */
+}
+/***********************Fixed positioning***********************/
+div.fixed{ background-color: yellow;
+    width: 100px; 
+    height: 100px;}
+
+
+    /*נסיון שלי 
+    
+    div.relative{
+    width: 100px; 
+    height: 100px;
+    position: relative;
+    
+}
+
+div.red{
+    background-color: red;
+    left: 200px;
+}
+div.blue{
+    background-color: blue;
+bottom: 100px;}
+div.yellow{
+    background-color: yellow;
+bottom: 200px;
+left: 100px;
+} */

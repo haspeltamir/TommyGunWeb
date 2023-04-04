@@ -1,0 +1,73 @@
+/***********************Static positioning***********************/
+/* its just html without css (default)*/
+div.static{
+    background-color: aqua;
+    width: 100px; 
+    height: 100px;
+    display: none;
+}
+/***********************Absolute positioning***********************/
+/* מיקום יחסית להורה(המסך) */
+/* לא משאיר מיקום ריק */
+body{
+    margin: 0;
+}
+.container{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    background-color: gray;
+}
+div.absulote{
+    background-color: blue;
+    position: absolute;
+    width: 100px; 
+    height: 100px;
+}
+
+div.Ared{
+    background-color: red;
+    left: 200px;
+    top: 200px;
+
+}
+div.Ablue{
+    background-color: blue;
+    left: 100px;
+    top: 100px;
+}
+div.Ayellow{
+    background-color: yellow;
+
+}
+/***********************Fixed positioning***********************/
+/* מקבע למסך */
+div.fixed{ background-color: hotpink;
+    width: 100px; 
+    height: 100px;
+    left: 600px;
+    position: fixed;}
+    
+
+
+    /*נסיון שלי 
+    
+    div.relative{
+    width: 100px; 
+    height: 100px;
+    position: relative;
+    
+}
+
+div.red{
+    background-color: red;
+    left: 200px;
+}
+div.blue{
+    background-color: blue;
+bottom: 100px;}
+div.yellow{
+    background-color: yellow;
+bottom: 200px;
+left: 100px;
+} */

@@ -1,48 +1,71 @@
 body{
     margin: 0px;
+    /* ממקם באמצע רק מש שיש לו אינליין או אלמנטים של בלוק שתופסים את כל הרוחב */
+    text-align: center;
+    /* font-family: Arial,"Brush Script MT", Helvetica, sans-serif,cursive; */
+    font-family: 'Merriweather', serif;
 }
- div.top{
+div.top_container{
+    /* שמים אותו כרלטיב אחרת הבנים שלו ישתמשו בבודי בתור נקודת יחוס */
     background-color: #e4f9f5;
+    position: relative;
+    padding-top: 100px;
+}
+div.mid_container{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+}
+div.buttom_container{
+    background-color: blueviolet;
+    width: 200px;
+    height: 200px;
 }
 
-.pro{
+span.pro{
     text-decoration:underline;
 }
 
  
-
+div.links{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: beige;
+    right: 20px;
+    top: 10px;
+}
 
 h1{
-    margin-top: 0;
+    /* position: relative; */
+    /* top: 100px; */
+    margin-top: 0px;
+    /* auto dose automatic centering */
+    /* width: 10%; */
+    /* זה בישביל"טקסט אליין סנטר */
+    /* margin: 0 auto 0 auto; */
+    font-family: 'Sacramento', cursive;
+}
+h2{font-family: 'Montserrat', sans-serif;
+}
+h3{font-family: 'Montserrat', sans-serif;
 }
 
-/* תרגיל */
-/* div.top{
-    background-color: #e4f9f5;
-    width: 200px; 
-    height: 200px;
-    border: solid;
-    border-width: 10px;
-    padding: 20px;
+.top_cloud{
+    position: absolute;
+    right: 300px;
+    top: 50px;
 }
 
-div.mid{
-    background-color: red;
-    border:solid;
-    border-width: 20px;
-    width: 200px; 
-    height: 200px;
-    margin-left: 260px;
+.buttom_cloud{
+    position: absolute;
+    left: 300px;
+    bottom: 300px;
 }
-div.buttom{
-    background-color: yellow;
-    width: 200px; 
-    height: 200px; 
-    border:solid;
-    border-width: 10px;
-    margin-left: 500px;
-} */
 
+
+
+/***********************block/inline/block-inline displays***********************/
 /* בלוק-אינליין=גם אותה שורה וגם אפשר לשנות גודל */
 p.InlineBlock{
     background-color: red;
@@ -69,4 +92,5 @@ span.tests{
     background-color: blueviolet;
     width: 100px;
     display: block;
- }
+}
+/***********************block/inline/block-inline displays***********************/
