@@ -1,29 +1,62 @@
-body{
+body {
     margin: 0px;
     /* ממקם באמצע רק מש שיש לו אינליין או אלמנטים של בלוק שתופסים את כל הרוחב */
     text-align: center;
     /* font-family: Arial,"Brush Script MT", Helvetica, sans-serif,cursive; */
-    font-family: 'Merriweather', serif;
+    font-family: "Merriweather", serif;
+    color: #40514e;
 }
-div.top_container{
+
+::first-letter {
+    text-transform: capitalize;
+}
+
+span.pro {
+    text-decoration: underline;
+}
+
+p.intro {
+    width: 30%;
+    margin: auto;
+}
+
+p.contact {
+    width: 30%;
+    margin: 40px auto 60px auto;
+}
+
+p.copyright {
+    margin-bottom: 0;
+    color: #eaf6f6;
+    font-size: 0.75rem;
+    padding: 20px 0px;
+}
+
+p {
+    line-height: 2;
+}
+
+/************continers*************/
+div.top_container {
     /* שמים אותו כרלטיב אחרת הבנים שלו ישתמשו בבודי בתור נקודת יחוס */
     background-color: #e4f9f5;
     position: relative;
     padding-top: 100px;
 }
-div.middle-container{
-  
-}
-div.bottom_container{
-    
+
+div.middle-container {
+    margin: 100px 0 100px 0;
 }
 
-span.pro{
-    text-decoration:underline;
+div.bottom_container {
+    background-color: #66bfbf;
+    padding: 50px 0 20px;
 }
 
- 
-div.links{
+
+/************links*************/
+
+div.links {
     position: absolute;
     height: 200px;
     width: 200px;
@@ -32,15 +65,16 @@ div.links{
     top: 10px;
 }
 
-h1{
+/************headers*************/
+h1 {
     /* position: relative; */
     /* top: 100px; */
-    margin-top: 0px;
+    margin: 50px auto 0 auto;
     /* auto dose automatic centering */
     /* width: 10%; */
     /* זה בישביל"טקסט אליין סנטר" במידה ומשנים לאלמנט גודל */
     /* margin: 0 auto 0 auto; */
-    font-family: 'Sacramento', cursive;
+    font-family: "Sacramento", cursive;
     /* גודל דינאמי: דרך ראשונה : אחוזים */
     /* 100%==16px */
     /* כלומר אם רוצים 90 פיקסלים  */
@@ -52,77 +86,189 @@ h1{
     /* font-size: 5.625em;  */
     /* גודל דינאמי: דרך שלישית : אר-אי-אם */
     /* לא יוסיף יודל על גבי ההורה כמו הקודמים */
-    font-size: 5.625rem; 
-}
-h2{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
-}
-h3{
-    font-family: 'Montserrat', sans-serif;
+    font-size: 5.625rem;
+    color: #66bfbf;
+    /* גובהה בין מה שמעל השורה למה שמתחתיה */
+    line-height: 1;
 }
 
-.top_cloud{
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+    color: #66bfbf;
+    /* הדגשה */
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #11999e;
+    font-family: "Montserrat", sans-serif;
+}
+
+/************hr*************/
+hr {
+    border-style: dotted none none none;
+    border-color: hotpink;
+    /* margin: 100px auto 100px auto; */
+    border-width: 5px;
+    width: 5%;
+    margin: 100px auto;
+    /*%==responsive*/
+}
+
+/************לינקים תחתונים*************/
+a {
+    color: #11999e;
+    font-family: Montserrat, sans-serif;
+    margin: 10px 20px;
+    /* מורד את הקו מהלינקים */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #eaf6f6;
+}
+
+img.top_cloud {
     position: absolute;
     right: 300px;
-    top: 50px;
+    top: 40px;
 }
 
-.buttom_cloud{
+img.buttom_cloud {
     position: absolute;
-    left: 300px;
+    left: 250px;
     bottom: 300px;
 }
 
-img.profile_pic {
+/************my fixed photo*************/
+div.div_sexy_old_me {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+}
+
+img.sexy_old_me {
+    width: 150px;
+    /*pic size*/
+    border-radius: 75px;
+    /*מעגל קצוות*/
+}
+
+/************bath animation*************/
+img.bath_pic {
     /*יוצר חוקים לתמונה*/
-    width: 200px; /*pic size*/
-    border-radius: 50px; /*מעגל קצוות*/
+    width: 200px;
+    /*pic size*/
+    border-radius: 50px;
+    /*מעגל קצוות*/
     background-color: blueviolet;
     /* margin-right: 10px; */
-  }
-img.skills_pic{
+}
+
+/************skill_row div*************/
+div.skill-row {
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+}
+
+/************smuggler animation*************/
+img.smuggler_pic {
     /*יוצר חוקים לתמונה*/
-    width: 200px; /*pic size*/
-    border-radius: 50px; /*מעגל קצוות*/
+    width: 25%;
+    /*pic size*/
+    /* border-radius: 50px; */
+    /*מעגל קצוות*/
+    float: left;
+    /*גורם לקופסא לעטוף את הטקסט ושהם יהיו אינליין*/
+    margin-right: 30px;
     /* margin-right: 10px; */
-  }
-img.homeless_fights{
+}
+
+/************homeless animation*************/
+img.homeless_fights {
     /*יוצר חוקים לתמונה*/
-    width: 200px; /*pic size*/
-    border-radius: 50px; /*מעגל קצוות*/
+    width: 25%;
+    /*pic size*/
+    /* border-radius: 50px; */
+    /*מעגל קצוות*/
+    float: right;
+    margin: 0 0 0 30px;
     /* margin-right: 10px; */
-  }
+}
 
 
+/************clear*************/
+/* גורם לכך שלא יהיה כלום מצד שמאל של הטקסט */
+/* p.smuggler_skill_description{
+      clear: left;
+    }
+    
+    p.homeless_skill_description{
+    
+      clear: right;
+    } */
 
+/************contact me baby*************/
+.btn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: Montserrat;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+}
 
 /***********************block/inline/block-inline displays***********************/
 /* בלוק-אינליין=גם אותה שורה וגם אפשר לשנות גודל */
-p.InlineBlock{
+p.InlineBlock {
     background-color: red;
-    width: 100px; 
+    width: 100px;
     display: inline-block;
 }
+
 /* אינליין= אותה שורה אבל אי אפשר לשנות גודל */
-p.testp{
+p.testp {
     background-color: red;
-    width: 100px; 
+    width: 100px;
     display: inline;
 }
+
 /* מעלים אותו (מחביא) כאילו לא היה כלומר לא יהיו רווחים בין האלמנטים=NONE*/
-p.none{ 
+p.none {
     display: none;
 }
+
 /* מעלים אותו (מחביא) אבל רק ויזואלית כלומר יהיו רווחים בין האלמנטים=NONE*/
-p.visibility_hidden{ 
+p.visibility_hidden {
     visibility: hidden;
 }
 
 /* בלוק= אפשר לשנות גודל אבל אי אפשר אותה שורה  */
-span.tests{
+span.tests {
     background-color: blueviolet;
     width: 100px;
     display: block;
 }
+
 /***********************block/inline/block-inline displays***********************/
