@@ -1,0 +1,52 @@
+/* z only works when using positioning (relative,absolute,fixed) */
+div {
+    height: 100px;
+    width: 100px;
+    border: 1px solid;
+    position: absolute;
+}
+
+div.red {
+    background-color: red;
+    /* z index 1 bring it closer */
+    z-index: 1;
+}
+
+div.blue {
+    background-color: blue;
+    z-index: -1;
+    /* z index 1 push it behind */
+    left: 40px;
+    top: 40px;
+}
+
+div.yellow {
+    background-color: yellow;
+
+    left: 20px;
+    top: 20px;
+}
+
+/* leptop 1200px */
+/* tablet 900px */
+/* phone 600px */
+/* if you ar at this size or less */
+@media(max-width:900px) {
+    h1 {
+        font-size: 60px;
+    }
+}
+
+/* if you are at this size or more */
+@media(min-width:900px) {
+    h1 {
+        color: red;
+    }
+
+}
+
+@media (min-width:600px) and (max-width:900px) {
+    h1 {
+        color: green;
+    }
+}
