@@ -33,7 +33,7 @@ div.yellow {
 /* if you ar at this size or less */
 @media(max-width:900px) {
     h1 {
-        font-size: 60px;
+        font-size: 90px;
     }
 }
 
